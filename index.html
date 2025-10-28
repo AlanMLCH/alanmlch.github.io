@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alan López — ML Engineer / MLOps</title>
+  <meta name="description" content="Machine Learning Engineer & MLOps — Vertex AI, Airflow, PyTorch. Portfolio and projects by Alan López (AlanMLCH)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Minimal CSS framework with no build step -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css" />
+  <style>
+    :root { --brand: 264 84% 52%; }
+    html { scroll-behavior:smooth; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+    .container { max-width: 1050px; margin-inline:auto; }
+    .brand { color: hsl(var(--brand)); }
+    header.hero { padding: 5rem 0 2rem; }
+    header .avatar { width: 84px; height: 84px; border-radius: 50%; box-shadow: 0 6px 24px rgba(0,0,0,.15); }
+    .chips { display:flex; flex-wrap:wrap; gap:.5rem; margin:.75rem 0 0; }
+    .chip { padding:.35rem .6rem; border-radius:999px; border:1px solid var(--pico-muted-border-color); font-size:.85rem; }
+    .card-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:1rem; }
+    .muted { color: var(--pico-muted-color); }
+    .footer { padding: 2rem 0 3rem; }
+    .emoji { filter: grayscale(.2); }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .nowrap { white-space: nowrap; }
+    .kbd { background: var(--pico-muted-border-color); border-radius: 6px; padding: 0 .3rem; font-family: inherit; }
+    /* GitHub dark style tweaks */
+    @media (prefers-color-scheme: dark) {
+      .chip { border-color: #2a2a2a; }
+    }
+  </style>
+  <meta property="og:title" content="Alan Martín López Chávez — ML Engineer / MLOps" />
+  <meta property="og:description" content="Scalable ML systems: Vertex AI, Airflow, Kubeflow, PyTorch. Portfolio & projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/000000?v=4" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alan López",
+    "jobTitle": "Machine Learning Engineer / MLOps",
+    "url": "https://alanmlch.github.io",
+    "sameAs": [
+      "https://github.com/AlanMLCH",
+      "https://www.linkedin.com/in/alanmlch"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav class="container" aria-label="Primary">
+    <ul>
+      <li><strong class="brand">AL</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#talks">Talks</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero container">
+    <div class="grid">
+      <div>
+        <h1>👋 Hi, I’m <span class="brand">Alan López</span></h1>
+        <p class="muted">Machine Learning Engineer & MLOps — building reproducible, scalable ML systems on <span class="nowrap">GCP Vertex AI</span>, Airflow/Composer, Kubeflow & PyTorch. I like clean repos, Makefiles, Docker, and automated pipelines.</p>
+        <p>
+          <a class="contrast" href="https://github.com/AlanMLCH?tab=repositories" role="button">View GitHub</a>
+          <a href="#contact" role="button" class="secondary">Get in touch</a>
+        </p>
+        <div class="chips" aria-label="Highlights">
+          <span class="chip">Fraud detection</span>
+          <span class="chip">Vertex AI Pipelines</span>
+          <span class="chip">Airflow</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">FastAPI</span>
+        </div>
+      </div>
+      <div>
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/000000?v=4" alt="Alan López avatar (GitHub)" />
+        <p class="muted" style="margin-top:.5rem">Based in Mexico · Open to collabs</p>
+        <details>
+          <summary>Quick links</summary>
+          <ul>
+            <li><a href="https://github.com/AlanMLCH">github.com/AlanMLCH</a></li>
+            <li><a href="https://www.linkedin.com/in/alanmlc">linkedin.com/in/alanmlc</a></li>
+            <li><a href="mailto:alan.m.l.ch.1997@gmail.com">alan.m.l.ch.1997@gmail.com</a></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="projects">
+      <h2>🚀 Projects</h2>
+      <div class="card-grid">
+        <article>
+          <header><strong>Azure Predictive Maintenance</strong></header>
+          <p>End‑to‑end ML End-to-end pipeline for predictive maintenance. Champion/Challenger and API with FastAPI.</p>
+          <footer>
+            <a href="https://github.com/AlanMLCH/azure_pdm_ml">Repo</a>
+            <a href="#" class="secondary">Diagram</a>
+          </footer>
+        </article>
+        <article>
+          <header><strong>Steam Game Recommender</strong></header>
+          <p>Two‑tower retrieval + FAISS ANN index; nightly rebuild, TorchServe + FastAPI behind Traefik; PSI drift monitoring.</p>
+          <footer>
+            <a href="https://github.com/AlanMLCH/steam-recommender">Repo</a>
+            <a href="#" class="secondary">Demo</a>
+          </footer>
+        </article>
+        <article>
+          <header><strong>MusicGen (PyTorch)</strong></header>
+          <p>Transformer for MIDI generation by instrument; CUDA training, FastAPI endpoint, simple web UI for prompts.</p>
+          <footer>
+            <a href="https://github.com/AlanMLCH/sound_generator">Repo</a>
+            <a href="#" class="secondary">Samples</a>
+          </footer>
+        </article>
+        <article>
+          <header><strong>ML Ops Template for Binary Classification</strong></header>
+          <p>Production‑ready repo skeleton: <span class="mono">src/</span>, <span class="mono">configs/</span>, Simple python, CLI, tests, docs.</p>
+          <footer>
+            <a href="https://github.com/AlanMLCH/binary_classification">Repo</a>
+            <a href="#" class="secondary">Docs</a>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack">
+      <h2>⚙️ Tech Stack</h2>
+      <div class="chips" role="list">
+        <span class="chip" role="listitem">Python 3.11</span>
+        <span class="chip" role="listitem">PyTorch</span>
+        <span class="chip" role="listitem">TensorFlow</span>
+        <span class="chip" role="listitem">XGBoost</span>
+        <span class="chip" role="listitem">FastAPI</span>
+        <span class="chip" role="listitem">Airflow / Composer</span>
+        <span class="chip" role="listitem">Vertex AI</span>
+        <span class="chip" role="listitem">BigQuery</span>
+        <span class="chip" role="listitem">Docker</span>
+        <span class="chip" role="listitem">Kubernetes</span>
+        <span class="chip" role="listitem">dbt</span>
+        <span class="chip" role="listitem">Power BI</span>
+        <span class="chip" role="listitem">Databricks</span>
+        <span class="chip" role="listitem">GCP</span>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <h2>📬 Contact</h2>
+      <p>Want to collaborate or have a project in mind? Reach out.</p>
+      <ul>
+        <li>Email: <a href="mailto:alan.m.l.ch.1997@gmail.com">alan.m.l.ch.1997@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/alanmlc">linkedin.com/in/alanmlc</a></li>
+        <li>GitHub: <a href="https://github.com/AlanMLCH">@AlanMLCH</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <small class="muted">© <span id="y"></span> Alan López · Built with <span class="emoji">⚙️</span> Pico.css · No JS build, fully static.</small>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Optional: replace avatar src automatically from GitHub API if desired (no API call here to keep it static).
+  </script>
+</body>
+</html>
